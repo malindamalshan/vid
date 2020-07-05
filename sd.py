@@ -34,7 +34,7 @@ elif sub == "n" or sub == "N":
     su = False 
 ydl_opts = {
      'writesubtitles':su,
-     "outtmpl": "/storage/extSdCard/%(title)s.%(ext)s", 
+     "outtmpl": "/storage/emulated/1/sdcard/%(title)s.%(ext)s", 
      'format':coad,}
 with youtube_dl.YoutubeDL(ydl_opts) as ydl:
      ydl.download([url])
