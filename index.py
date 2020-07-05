@@ -1,6 +1,4 @@
 import youtube_dl
-import colr
-
 
 
 print("""\033[34m
@@ -35,7 +33,7 @@ elif sub == "n" or sub == "N":
     su = False 
 ydl_opts = {
      'writesubtitles':su,
-     "outtmpl": "/storage/emulated/0/android/%(title)s.%(ext)s", 
+     "outtmpl": "/storage/emulated/0/Android/%(title)s.%(ext)s", 
      'format':coad,}
 with youtube_dl.YoutubeDL(ydl_opts) as ydl:
      ydl.download([url])
