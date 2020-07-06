@@ -1,5 +1,4 @@
 import youtube_dl
-import colr
 
 
 def main():
